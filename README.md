@@ -1,69 +1,143 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/theme/resume/)
+# Portfolio de Zakaria Errahmaouy
 
-[Resume](https://startbootstrap.com/theme/resume/) is a resume and CV theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+Portfolio professionnel développé avec Bootstrap 5 et optimisé pour les performances.
 
-## Preview
+## 🚀 Fonctionnalités
 
-[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://startbootstrap.github.io/startbootstrap-resume/)
+- **Design responsive** : S'adapte parfaitement à tous les écrans
+- **Navigation latérale** : Menu de navigation fixe avec image de profil
+- **Sections complètes** : Profil, expérience, formation, compétences, centres d'intérêt et certifications
+- **Performance optimisée** : Images compressées et CSS minifié
+- **SEO friendly** : Métadonnées optimisées
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-resume/)**
+## 🛠️ Technologies utilisées
 
-## Status
+- **HTML5** : Structure sémantique
+- **CSS3/SCSS** : Styles avec variables et mixins
+- **Bootstrap 5** : Framework CSS responsive
+- **JavaScript** : Interactions et animations
+- **Node.js** : Build tools et optimisation
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+## 📁 Structure du projet
 
-## Download and Installation
+```
+portfolio/
+├── src/
+│   ├── scss/           # Styles SCSS source
+│   ├── pug/            # Templates Pug
+│   └── js/             # JavaScript source
+├── dist/               # Fichiers de production
+├── css/               # CSS compilé
+├── assets/            # Images et ressources
+└── scripts/           # Scripts de build
+```
 
-To begin using this template, choose one of the following options to get started:
+## 🚀 Installation et utilisation
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/resume/)
-- Install using npm: `npm i startbootstrap-resume`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-resume.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-resume)
+### Prérequis
+- Node.js (version 14 ou supérieure)
+- npm
 
-## Usage
+### Installation
+```bash
+# Cloner le repository
+git clone [url-du-repo]
 
-### Basic Usage
+# Installer les dépendances
+npm install
+```
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+### Développement
+```bash
+# Lancer le serveur de développement
+npm start
 
-### Advanced Usage
+# Ou en mode debug
+npm run start:debug
+```
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+### Production
+```bash
+# Build complet avec optimisation
+npm run build
+```
 
-#### npm Scripts
+## 🎨 Personnalisation
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+### Couleurs
+Les couleurs sont définies dans `src/scss/variables/_colors.scss`
 
-You must have npm installed in order to use this build environment.
+### Typographie
+Les polices sont configurées dans `src/scss/variables/_typography.scss`
 
-## Bugs and Issues
+### Espacement
+Les variables d'espacement sont dans `src/scss/variables/_spacing.scss`
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-resume/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/resume/).
+## 📸 Optimisation des images
 
-## About
+Le projet inclut un système d'optimisation automatique des images :
 
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+- **Compression automatique** : Les images sont automatiquement redimensionnées et compressées
+- **Format optimisé** : Conversion en JPEG avec qualité optimale
+- **Taille réduite** : Réduction de 98% de la taille des images
 
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
+### Script d'optimisation
+```bash
+# Optimiser manuellement les images
+npm run optimize:images
+```
 
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+## 🔧 Scripts disponibles
 
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
+- `npm run build` : Build complet avec optimisation
+- `npm run clean` : Nettoyer les fichiers de build
+- `npm run build:scss` : Compiler les styles SCSS
+- `npm run build:pug` : Compiler les templates Pug
+- `npm run optimize:images` : Optimiser les images
+- `npm start` : Lancer le serveur de développement
 
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## 📱 Responsive Design
 
-## Copyright and License
+Le portfolio est entièrement responsive avec :
+- **Mobile First** : Optimisé pour les petits écrans
+- **Tablette** : Adaptation pour les écrans moyens
+- **Desktop** : Navigation latérale fixe pour les grands écrans
 
-Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+## 🎯 Sections du portfolio
+
+1. **Profil** : Présentation personnelle et coordonnées
+2. **Expérience** : Parcours professionnel détaillé
+3. **Formation** : Diplômes et certifications
+4. **Compétences** : Technologies et outils maîtrisés
+5. **Centres d'intérêt** : Passions et hobbies
+6. **Certifications** : Diplômes et accréditations
+
+## 📈 Performance
+
+- **Images optimisées** : Réduction de 98% de la taille
+- **CSS minifié** : Fichiers de production optimisés
+- **Chargement rapide** : Structure HTML optimisée
+- **SEO optimisé** : Métadonnées complètes
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créer une branche feature (`git checkout -b feature/AmazingFeature`)
+3. Commit les changements (`git commit -m 'Add some AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 👨‍💻 Auteur
+
+**Zakaria Errahmaouy**
+- Email : zakaria.rahmaouy@gmail.com
+- LinkedIn : [Zakaria Errahmaouy](https://www.linkedin.com/in/er-rahmaouy/)
+- GitHub : [zakaria-errahmaouy](https://github.com/zakaria-errahmaouy)
+
+---
+
+*Développé avec ❤️ et Bootstrap 5*

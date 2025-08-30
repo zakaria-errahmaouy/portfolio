@@ -8,7 +8,7 @@ const sass = require('sass');
 const sh = require('shelljs');
 
 const stylesPath = '../src/scss/styles.scss';
-const destPath = upath.resolve(upath.dirname(__filename), '../dist/css/styles.css');
+const destPath = upath.resolve(upath.dirname(__filename), '../css/styles.css');
 
 module.exports = function renderSCSS() {
     
@@ -20,8 +20,8 @@ module.exports = function renderSCSS() {
       });
 
     const destPathDirname = upath.dirname(destPath);
-    if (!sh.test('-e', destPathDirname)) {
-        sh.mkdir('-p', destPathDirname);
+    if (!fs.existsSync(destPathDirname)) {
+        fs.mkdirSync(destPathDirname, { recursive: true });
     }
 
     postcss([ autoprefixer ]).process(results.css, {from: 'styles.css', to: 'styles.css'}).then(result => {
