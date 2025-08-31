@@ -1,5 +1,5 @@
 // 
-// Sections
+// Sections - Contenu Principal ENSI
 // 
 
 section.resume-section {
@@ -10,9 +10,82 @@ section.resume-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     max-width: 75rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $blue-primary, $blue-secondary, $blue-accent);
+    }
+}
 
-    .resume-section-content {
-        width: 100%;
+section.resume-section .resume-section-content {
+    width: 100%;
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: $blue-primary;
+        position: relative;
+        margin-bottom: 1.5rem;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 3rem;
+            height: 3px;
+            background: linear-gradient(90deg, $blue-primary, $blue-secondary);
+            border-radius: 2px;
+        }
+    }
+    
+    .subheading {
+        color: $blue-secondary;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .lead {
+        color: $gray-700;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+    
+    .social-icons .social-icon {
+        background: linear-gradient(135deg, $blue-primary, $blue-secondary);
+        box-shadow: 0 4px 15px rgba($blue-primary, 0.3);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba($blue-primary, 0.4);
+        }
+    }
+    
+    .dev-icons .list-inline-item {
+        i {
+            color: $blue-primary;
+            transition: all 0.3s ease;
+        }
+        
+        &:hover i {
+            color: $blue-secondary;
+            transform: scale(1.2);
+        }
+    }
+    
+    .fa-ul .fa-li {
+        color: $blue-primary;
+    }
+    
+    .text-primary {
+        color: $blue-primary !important;
     }
 }
 
