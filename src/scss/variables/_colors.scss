@@ -1,0 +1,37 @@
+// 
+// Colors - Thème Professionnel Élégant
+// 
+
+// Pre-state grayscale colors used in other variables
+$gray-800: #333333;          // Gris très foncé pour le texte
+$gray-700: #4a4a4a;          // Gris foncé
+$gray-600: #666666;          // Gris moyen
+$gray-500: #888888;          // Gris
+$gray-400: #aaaaaa;          // Gris clair
+$gray-300: #cccccc;          // Gris plus clair
+$gray-200: #e1e1e1;          // Gris clair (couleur secondaire)
+$gray-100: #f5f5f5;          // Gris très clair
+
+// Palette de couleurs professionnelles élégantes
+$blue-primary: #1A2A6C;      // Bleu marine - couleur principale
+$blue-secondary: #2a4a8c;    // Bleu pétrole plus clair
+$blue-accent: #3a5a9c;       // Bleu accent
+$blue-light: #e8f0ff;        // Bleu très clair
+$blue-dark: #0f1a4a;         // Bleu très foncé
+
+// Override Bootstrap color system
+$primary: $blue-primary;      // Bleu marine
+$secondary: $gray-200;        // Gris clair
+$info: $blue-secondary;       // Bleu pétrole
+$light: $gray-200;            // Gris clair
+$dark: $gray-800;             // Gris très foncé
+
+// Couleurs d'accentuation élégantes
+$success: #28a745;            // Vert professionnel
+$warning: #D4AF37;            // Or/Cuivre - accent élégant
+$danger: #dc3545;             // Rouge professionnel
+
+// Couleurs spéciales pour le portfolio
+$text-primary: $gray-800;     // Noir/gris très foncé pour le texte
+$text-secondary: $gray-600;   // Gris moyen pour le texte secondaire
+$accent-gold: #D4AF37;        // Or/Cuivre pour les accents
